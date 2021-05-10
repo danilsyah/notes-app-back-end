@@ -81,7 +81,7 @@ const editNoteByidHandler = (request, h) => {
   // cek kondisi data , ada atau tidak
   if (index !== -1) {
     notes[index] = {
-      ...[index],
+      ...notes[index],
       title,
       tags,
       body,
